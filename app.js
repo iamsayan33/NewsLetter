@@ -28,10 +28,10 @@ const data = {
     ]
 }
 const jsonData = JSON.stringify(data);
-var url="https://us20.api.mailchimp.com/3.0/lists/cecfe34e13"
+var url="your url"
 var options={
     method:"POST",
-    auth: "Sayan:ee6c6b4ed492deeb351370a7445213dd-us20"
+    auth: " your api key"
 }
 
 const request=https.request(url,options,function(response){
@@ -60,6 +60,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT || 3000,function(){
     console.log("server started");
 })
-
-//ee6c6b4ed492deeb351370a7445213dd-us20    api key
-//cecfe34e13 list id
